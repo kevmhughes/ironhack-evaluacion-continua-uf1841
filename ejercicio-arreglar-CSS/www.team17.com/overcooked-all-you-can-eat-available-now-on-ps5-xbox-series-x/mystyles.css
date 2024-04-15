@@ -5,3 +5,20 @@
 /* h1 {
     color: red;
 } */
+
+h4 {
+  text-align: center;
+}
+
+.published-date {
+  color: #f77d00;
+}
+
+div.site-header__body {
+  background-color: rgb(132, 0, 197, 0.5);
+}
+
+.logos-social-networks {
+    display: flex;
+    justify-content: center;
+}
