@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #7277b8;
+        color: white;
+        height: 1.5rem;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .container {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .card * {
+        border: 1px solid #f0f0f0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        width: 300px;
+        flex-grow: 1;
+      }
+
+      .card:nth-child(odd) > :first-child {
+        background-color: #101010;
+      }
+
+      .card:nth-child(even) > :first-child {
+        background-color: #7277b8;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .pro:hover {
+        box-shadow: 0 8px 12px 0 rgb(104, 104, 171, 0.8);
+      }
+
+      .card-title {
+        color: white;
+      }
+
+      .card-price {
+        background-color: #f0f0f0;
+      }
+
+      .card > :last-child {
+        background-color: #f0f0f0;
+        height: 60px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    Básico
-    $ 9.99 / año
-    10GB de Almacenamiento
-    10 Correos Electrónicos
-    10 Dominios
-    1GB de Ancho de Banda
-    Registrarse
-    
-    Pro
-    $ 24.99 / año
-    25GB de Almacenamiento
-    25 Correos Electrónicos
-    25 Dominios
-    2GB de Ancho de Banda
-    Registrarse
-    
-    Premium
-    $ 49.99 / año
-    50GB de Almacenamiento
-    50 Correos Electrónicos
-    50 Dominios
-    5GB de Ancho de Banda
-    Registrarse
-</body>
+  <body>
+    <div class="container">
+      <div class="card basico">
+        <div class="card-title">Básico</div>
+        <div class="card-price">9.99 €/ año</div>
+        <div>10GB de Almacenamiento</div>
+        <div>10 Correos Electrónicos</div>
+        <div>10 Dominios</div>
+        <div>1GB de Ancho de Banda</div>
+        <div>
+          <button>Registrarse</button>
+        </div>
+      </div>
 
+      <div class="card pro">
+        <div class="card-title">Pro</div>
+        <div class="card-price">24.99 €/ año</div>
+        <div>25GB de Almacenamiento</div>
+        <div>25 Correos Electrónicos</div>
+        <div>25 Dominios</div>
+        <div>2GB de Ancho de Banda</div>
+        <div>
+          <button>Registrarse</button>
+        </div>
+      </div>
+
+      <div class="card premium">
+        <div class="card-title">Premium</div>
+        <div class="card-price">49.99 €/ año</div>
+        <div>50GB de Almacenamiento</div>
+        <div>50 Correos Electrónicos</div>
+        <div>50 Dominios</div>
+        <div>5GB de Ancho de Banda</div>
+        <div>
+          <button>Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
